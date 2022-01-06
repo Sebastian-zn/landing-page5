@@ -1,15 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Styles & Icons -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="btnBackToTop">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
 
-  <script src="main.js"></script>
-</body>
+    <!-- Menu & Sidebar -->
+    <div class="menu" id="menu">
+      <i class="bi bi-list" id="menu-icon"></i>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <ul class="sidebar__menu">
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link" data-content="Home">Home</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link" data-content="Services">Services</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link" data-content="About">About</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link" data-content="Jobs">Jobs</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="#" class="sidebar__link" data-content="Policy & Terms"
+            >Policy & Terms</a
+          >
+        </li>
+      </ul>
+      <div class="sidebar__social-media">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="img__wrapper">
+        <img src="images/img1.jpg" alt="" />
+      </div>
+      <div class="hero__texts">
+        <h1 class="hero__title">Architecture & Interior Design</h1>
+        <p class="hero__copy">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
+          dolorum.
+        </p>
+        <button class="hero__cta">Discover now</button>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <section class="section about">
+      <div class="about__header">
+        <h1 class="section__title">About Us</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="about__content">
+        <div class="service">
+          <div class="service__header">
+            <i class="service__icon bi bi-vector-pen"></i>
+            <h3 class="service__title">Interior</h3>
+            <p class="service__copy">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, maxime maiores sit in dignissimos voluptates
+              blanditiis, dolorem officiis illo ducimus ad quos nobis minus
+              corrupti, recusandae labore?
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__header">
+            <i class="service__icon bi bi-brush-fill"></i>
+            <h3 class="service__title">Exterior</h3>
+            <p class="service__copy">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, maxime maiores sit in dignissimos voluptates
+              blanditiis, dolorem officiis illo ducimus ad quos nobis minus
+              corrupti, recusandae labore?
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__header">
+            <i class="service__icon bi bi-pencil-fill"></i>
+            <h3 class="service__title">Design</h3>
+            <p class="service__copy">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, maxime maiores sit in dignissimos voluptates
+              blanditiis, dolorem officiis illo ducimus ad quos nobis minus
+              corrupti, recusandae labore?
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__header">
+            <i class="service__icon bi bi-palette-fill"></i>
+            <h3 class="service__title">Decoration</h3>
+            <p class="service__copy">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, maxime maiores sit in dignissimos voluptates
+              blanditiis, dolorem officiis illo ducimus ad quos nobis minus
+              corrupti, recusandae labore?
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__header">
+            <i class="service__icon bi bi-rulers"></i>
+            <h3 class="service__title">Planning</h3>
+            <p class="service__copy">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, maxime maiores sit in dignissimos voluptates
+              blanditiis, dolorem officiis illo ducimus ad quos nobis minus
+              corrupti, recusandae labore?
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__header">
+            <i class="service__icon bi bi-building"></i>
+            <h3 class="service__title">Execution</h3>
+            <p class="service__copy">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Consectetur, maxime maiores sit in dignissimos voluptates
+              blanditiis, dolorem officiis illo ducimus ad quos nobis minus
+              corrupti, recusandae labore?
+            </p>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img src="images/house.svg" alt="House under construction">
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="section our-team">
+      <div class="our-team__header">
+        <h1 class="section__title">Our Team</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="our-team__content">
+        <div class="our-team__wrapper">
+          <div class="card-box card-1">
+            <div class="card__info">
+              <h2>Cian Murphy</h2>
+              <h3>Team Leader</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam at provident non aperiam libero!</p>
+              <button class="card__button">Read more...</button>
+            </div>
+            <img src="images/person.jpg" alt="">
+          </div>
+          <div class="card-box card-2">
+            <div class="card__info">
+              <h2>Anya Mircova</h2>
+              <h3>Office Manager</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam at provident non aperiam libero!</p>
+              <button class="card__button">Read more...</button>
+            </div>
+            <img src="images/person2.jpg" alt="">
+          </div>
+          <div class="card-box card-3">
+            <div class="card__info">
+              <h2>Jordan Peterson</h2>
+              <h3>Product Developer</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veniam at provident non aperiam libero!</p>
+              <button class="card__button">Read more...</button>
+            </div>
+            <img src="images/person3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact">
+      <div class="contact-wrapper">
+        <div class="contact-img">
+          <img src="images/img2.jpg" alt="balconies">
+        </div>
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form action="#">
+            <div class="row">
+              <div class="form-group">
+                <label for="firstName">First name:</label>
+                <br />
+                <input type="text" class="form-input" name="firstName" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last name:</label>
+                <br />
+                <input type="text" class="form-input" name="lastName" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <br />
+                <input type="email" class="form-input" name="email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <label for="msg">Message:</label>
+                <br />
+                <textarea name="msg" class="form-textarea" cols="27" rows="4"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__copy">
+        <p>Copyright &copy; Sebastian Avila - All rights reserved</p>
+      </div>
+      <div class="footer__media">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
